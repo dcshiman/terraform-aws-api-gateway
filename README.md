@@ -4,8 +4,8 @@ This terraform module creates AWS Api gateway resource. The module only supports
 EG Usage:
 ```
 module "api_gateway" {
-  source = "../../../terraform/aws_api_gateway"
-  resources = var.resources
+  source  = "dcshiman/api-gateway/aws"
+  version = "0.0.4"
 
   name = "foo-api"
 
